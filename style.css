@@ -9,7 +9,8 @@ body{
   display: flex;
   align-items: center;
   min-height: 100vh;
-  background: #6d63fd;
+  background-image: linear-gradient(to right top, #3e60ba, #69c3b3);
+  justify-content: center;
 }
 .container{
   width: 450px;
@@ -37,7 +38,7 @@ body{
   font-size: 1.06rem;
   font-weight: 500;
   border-radius: 4px;
-  letter-spacing: 1.4rem;
+  letter-spacing: 1.4px;
   border: 1px solid #aaa;
   padding: 0 2.85rem 0 1rem;
 }
@@ -46,7 +47,7 @@ body{
   right: 13px;
   cursor: pointer;
   line-height: 53px;
-  color: #707070;
+  color: black;
 }
 .input-box span:hover{
   color: #6d63fd!important;
@@ -76,7 +77,7 @@ body{
   width: 50%;
 }
 .pass-indicator#strong::before{
-  background: #2ecc71;
+  background: green;
   width: 80%;
 }
 .wrapper .pass-length{
@@ -112,7 +113,7 @@ body{
 }
 .options .option label{
   cursor: pointer;
-  color: #f4f4f4;
+  color: black;
   padding-left: 0.63rem;
 }
 .wrapper .generate-btn{

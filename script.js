@@ -3,7 +3,8 @@ options = document.querySelectorAll(".option input"),
 copyIcon = document.querySelector(".input-box span"),
 passwordInput = document.querySelector(".input-box input"),
 passIndicator = document.querySelector(".pass-indicator"),
-generateBtn = document.querySelector(".generate-Btn");
+generateBtn = document.querySelector(".generate-btn");
+
 const characters = {
   lowercase: "abcdefghijklmnopqrstuvwxyz",
   uppercase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
@@ -36,6 +37,7 @@ const generatePassword = () => {
   }
   passwordInput.value = randomPassword;
 }
+
 const updatePassIndicator = () => {
   passIndicator.id = lengthSlider.value <= 8 ? "weak" : lengthSlider.value <= 16 ? "medium" : "strong";
 }
